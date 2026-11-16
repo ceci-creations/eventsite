@@ -1,0 +1,24 @@
+
+.svg-page {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.svg-intro {
+  display: grid;
+  gap: var(--space-1);
+  max-width: 60ch;
+}
+
+.svg-intro p {
+  color: var(--color-muted);
+}
+
+.svg-layout {
+  display: grid;
+  gap: var(--space-2);
+  align-items: start;
+  @media (width > 800px) {
+    grid-template-columns: 1fr min(40%, 36ch);
+  }
+}
