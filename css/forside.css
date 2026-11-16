@@ -72,7 +72,7 @@
   justify-items: center;
 
   width: 100vw;
-  background-color: #a2a2a2;
+  background-color: #7FB8D3;
   margin-left: calc(50% - 50vw);
 }
 
@@ -104,7 +104,7 @@
 
 .shortcut-card {
   border-radius: 10px;
-  background-color: #a2a2a2;
+  background-color: #99D1AA;
   padding: 20px;
   color: azure;
 
@@ -121,12 +121,13 @@
   display: block;
   width: 100%;
   margin: 15px auto 0;
-  background-color: dimgrey;
+  background-color: #397B59;
   border-radius: 5px;
   padding: 5px;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
+  color: #ffffff;
 }
 
 
@@ -137,7 +138,7 @@
 .species {
   width: 100vw;
   margin-left: calc(50% - 50vw);
-  background-color: #01c39e;
+  background-color: #F8F1DE;
   padding: 40px 0;
   box-sizing: border-box;
 }
@@ -190,7 +191,7 @@ ul {
   width: 100vw;
   margin-left: calc(50% - 50vw);
 
-  background-color: #a2a2a2;
+  background-color: #7FB8D3;
   padding: 40px max(30px, calc((100vw - 1200px) / 2));
   box-sizing: border-box;
 }
