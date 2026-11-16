@@ -1,9 +1,9 @@
 @font-face {
-    font-family: OpenSans;
-    src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+    font-family: JosefinSans;
+    src: url(../fonts/JosefinSans-Thin.ttf);
 }
 
 @font-face {
-    font-family: HindMadurai-Regular, sans-serif;
-    src: url(../fonts/HindMadurai-Regular.ttf);
+    font-family: Gruppo;
+    src: url(../fonts/CormorantGaramond-Regular.ttf);
 }

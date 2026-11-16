@@ -31,6 +31,20 @@ p {
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: JosefinSans;
+  font-weight: 700;
+}
+
+ul,
+p {
+  font-family: Gruppo;
+  font-size: 1.1rem;
+}
+
 main {
   display: grid;
   grid-template-columns: inherit;
@@ -137,6 +151,7 @@ main > * {
   justify-content: space-between;
   align-items: center;
   gap: var(--space-1);
+  color: #397B59;
 }
 
 .site-logo {
@@ -159,7 +174,7 @@ main > * {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: var(--space-1);
-  color: var(--color-muted);
+  color: #397B59
 }
 
 .site-footer {
