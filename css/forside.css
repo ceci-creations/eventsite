@@ -76,7 +76,7 @@
 .facts-grid {
   width: 100vw;
   margin-left: calc(50% - 50vw);
-  background-color: #7FB8D3;
+  background-color: #7fb8d3;
   padding: 30px 0;
   box-sizing: border-box;
 }
@@ -126,7 +126,7 @@
 
 .shortcut-card {
   border-radius: 10px;
-  background-color: #99D1AA;
+  background-color: #99d1aa;
   padding: 20px;
   color: #f5f5f5;
 }
@@ -142,7 +142,7 @@
   display: block;
   width: 100%;
   margin: 15px auto 0;
-  background-color: #397B59;
+  background-color: #397b59;
   border-radius: 5px;
   padding: 5px;
   font-weight: bold;
@@ -152,15 +152,12 @@
   box-sizing: border-box;
 }
 
-
-
-
 /** FLORA OG FAUNA **/
 
 .species {
   width: 100vw;
   margin-left: calc(50% - 50vw);
-  background-color: #F8F1DE;
+  background-color: #f8f1de;
   padding: 40px 0;
   box-sizing: border-box;
 }
@@ -196,13 +193,11 @@
   transform: scale(1.05);
 }
 
-
 /** MERE OM **/
 ul {
   list-style-position: inside;
   padding-left: 20px;
 }
-
 
 /** PROGRAM **/
 
@@ -214,7 +209,7 @@ ul {
   width: 100vw;
   margin-left: calc(50% - 50vw);
 
-  background-color: #7FB8D3;
+  background-color: #7fb8d3;
   padding: 40px max(30px, calc((100vw - 1200px) / 2));
   box-sizing: border-box;
 }
@@ -225,7 +220,6 @@ ul {
   gap: 20px;
   padding: 25px 0;
 }
-
 
 /* TIDSPUNKTER */
 
@@ -242,7 +236,7 @@ ul {
 .time span {
   font-size: 0.8rem;
   font-weight: normal;
-  color: #397F9C
+  color: #397f9c;
 }
 
 /* AKTIVITETSINDHOLD */
@@ -264,7 +258,6 @@ ul {
 .practical-item h3 {
   margin: 2px 0;
   font-size: 1rem;
-  
 }
 
 .practical-item p {
@@ -340,11 +333,9 @@ ul {
   cursor: pointer;
 }
 
-
 /* KARUSSEL */
 .karrusel {
   --antal: 5;
-
   overflow: hidden;
   width: 100%;
   min-width: 0;
@@ -354,7 +345,6 @@ ul {
 
 .sponsorer {
   display: flex;
-  flex-wrap: nowrap;
 }
 
 .sponsorer img {
@@ -364,5 +354,5 @@ ul {
   height: 100px;
   box-sizing: border-box;
   object-fit: contain;
-  padding: 15px 25px;
+  padding: 5px 7px;
 }

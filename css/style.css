@@ -1,7 +1,7 @@
 /* Variabler */
 html {
   --color-page: #f5f5f5;
-  --color-surface: #99D1AA;
+  --color-surface: #99d1aa;
   --color-text: #222;
   --color-muted: #666;
   --color-border: #d8d8d8;
@@ -127,7 +127,7 @@ main > * {
   justify-content: space-between;
   align-items: center;
   gap: var(--space-1);
-  color: #397B59;
+  color: #397b59;
 }
 
 .site-logo {
@@ -150,7 +150,7 @@ main > * {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: var(--space-1);
-  color: #397B59
+  color: #397b59;
 }
 
 .site-footer {
@@ -169,7 +169,6 @@ main > * {
   width: 100px;
   height: 100px;
   object-fit: contain;
-
 }
 
 /* Navigation */
@@ -219,7 +218,6 @@ main > * {
 
 /* Flader */
 .panel,
-.svg-placeholder,
 .form-placeholder,
 .opsamling-placeholder {
   background: var(--color-surface);
