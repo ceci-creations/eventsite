@@ -341,18 +341,16 @@ ul {
   min-width: 0;
   max-width: 100%;
   box-sizing: border-box;
-}
-
-.sponsorer {
-  display: flex;
-}
-
-.sponsorer img {
-  display: block;
-  flex: 0 0 calc(100% / var(--antal));
-  width: calc(100% / var(--antal));
-  height: 100px;
-  box-sizing: border-box;
-  object-fit: contain;
-  padding: 5px 7px;
+  .sponsorer {
+    display: flex;
+    img {
+      display: block;
+      flex: 0 0 calc(100% / var(--antal));
+      width: calc(100% / var(--antal));
+      height: 100px;
+      box-sizing: border-box;
+      object-fit: contain;
+      padding: 5px 7px;
+    }
+  }
 }
