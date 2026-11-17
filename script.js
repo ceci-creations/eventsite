@@ -14,13 +14,13 @@ if (opsamlingPlaceholder) {
 const sponsorer = document.querySelector("#sponsorer");
 // ^^ finder id'et 'sponsorer' i index.html
 
-//~~~~ 
+//~~~~
 
 let igang = false;
 // ^^ et flag.. husker om en animation kører lige nu..
 // her bruges 'let' i stedet for 'const', for at værdien kan ændres senere (false/true)
 
-//~~~~ 
+//~~~~
 
 // Funktionen 'naeste' herunder definerer selve skiftet, hvori rækken rykkes ét logo ad gangen til venstre og det første logo lægges bagerst, så karrusellen kører uendeligt
 function naeste() {
@@ -30,7 +30,7 @@ function naeste() {
 
   const bredde = sponsorer.children[0].offsetWidth;
   sponsorer.style.transition = "transform 1.2s ease";
-  sponsorer.style.transform = translateX(-${bredde}px);
+  sponsorer.style.transform = `translateX(-${bredde}px)`;
   // ^^ const bredde: en identifier kaldet 'bredde'. Finder den totale bredde på første logo
   // children[0] = det første logo (første child i rækken). Dog ikke det samme som first-child..
   // ^^ sponsorer, CSS: laver en transition-effekt og rykker rækken til venstre med den definerede bredde (identifieren)
@@ -56,7 +56,7 @@ function naeste() {
 // Når animationen er sket, kommer der en "oprydning" og setInterval herunder er "motoren", som står for at genstarte
 // basically: eventListener = nulstilling + muliggørelse af genstart/gentagelse. setInterval = selve genstarten/gentagelsen
 
-//~~~~ 
+//~~~~
 
 setInterval(naeste, 5000);
 // ^^ gør at funktionen 'naeste' kaldes hvert 5. sekund

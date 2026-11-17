@@ -354,3 +354,15 @@ ul {
     }
   }
 }
+
+@media (width > 600px) {
+  .karrusel {
+    .sponsorer {
+      --antal: 5;
+      img {
+        flex: 0 0 calc(100% / var(--antal));
+        width: calc(100% / var(--antal));
+      }
+    }
+  }
+}
