@@ -57,7 +57,7 @@
   gap: 20px;
 
   width: calc(100% - 60px);
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   box-sizing: border-box;
   padding-bottom: 0;
@@ -88,7 +88,7 @@
   gap: 20px;
 
   width: calc(100% - 60px);
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -119,7 +119,7 @@
   gap: 15px;
 
   width: calc(100% - 60px);
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -167,7 +167,7 @@
 
 .species-content {
   width: calc(100% - 60px);
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   box-sizing: border-box;
 
@@ -286,7 +286,7 @@ ul {
 
 /* Den store popover */
 #big-map {
-  width: min(90vw, 1000px);
+  width: min(100vw, 1000px);
   max-height: 90vh;
   padding: 20px;
   border: none;
