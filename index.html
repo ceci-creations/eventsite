@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NATURAMA | Mosemisionen </title>
+    <title>NATURAMA | Mosemisionen</title>
     <link rel="stylesheet" href="css/starter.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/forside.css" />
-    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/fonts.css" />
   </head>
 
   <body>
@@ -20,11 +20,14 @@
 
         <!-- GLOBAL NAVIGATION -->
         <nav class="site-nav">
-          <button>Menu</button>
+          <button popovertarget="menu" aria-label="Åbn menu">Menu</button>
+
           <ul class="menu" id="menu" popover>
             <li><a href="index.html" aria-current="page">Forside</a></li>
             <li><a href="svg.html">Aktivitetskort</a></li>
-            <li><a href="./event-site-skabelon-main/form.html">Tilmeld her!</a></li>
+            <li>
+              <a href="form.html">Tilmeld her!</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -39,7 +42,7 @@
           src="images/mosemose.webp"
           alt="Utterslev Mose med åkander i vandet"
         />
-        <div class="hero-text" >
+        <div class="hero-text">
           <h1>Mosemissionen</h1>
           <p>Bliv klogere på dyre- og plantelivet i Utterslev Mose</p>
           <!-- CTA: TILMELD -->
@@ -47,138 +50,184 @@
         </div>
       </section>
 
-              <!-- GRID FACTS -->
-<section class="facts-grid">
-  <div class="facts-content">
+      <!-- GRID FACTS -->
+      <section class="facts-grid">
+        <div class="facts-content">
+          <div class="fact">
+            <img src="images/size.svg" alt="" class="fact-icon" />
+            <div>
+              <h3>230</h3>
+              <p>Hektar natur</p>
+            </div>
+          </div>
 
-    <div class="fact">
-      <img src="images/size.svg" alt="" class="fact-icon" />
-      <div>
-        <h3>230</h3>
-        <p>Hektar natur</p>
-      </div>
-    </div>
+          <div class="fact">
+            <img src="images/plant.svg" alt="" class="fact-icon" />
+            <div>
+              <h3>500</h3>
+              <p>Plantearter</p>
+            </div>
+          </div>
 
-    <div class="fact">
-      <img src="images/plant.svg" alt="" class="fact-icon" />
-      <div>
-        <h3>500</h3>
-        <p>Plantearter</p>
-      </div>
-    </div>
+          <div class="fact">
+            <img src="images/bat.svg" alt="" class="fact-icon" />
+            <div>
+              <h3>5</h3>
+              <p>Flagermusearter</p>
+            </div>
+          </div>
 
-    <div class="fact">
-      <img src="images/bat.svg" alt="" class="fact-icon" />
-      <div>
-        <h3>5</h3>
-        <p>Flagermusearter</p>
-      </div>
-    </div>
-
-    <div class="fact">
-      <img src="images/waves.svg" alt="" class="fact-icon" />
-      <div>
-        <h3>3</h3>
-        <p>Søer</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
+          <div class="fact">
+            <img src="images/waves.svg" alt="" class="fact-icon" />
+            <div>
+              <h3>3</h3>
+              <p>Søer</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- ABOUT -->
       <section class="introduction-grid">
         <div class="about">
           <h2>Mosemissionen</h2>
-          <p>Hvor mange planter og dyr kan du egentlig genkende? 
-            <br><br>
-            Tag med på en spændende opdagelsesrejse i naturen, hvor du lærer at identificere arter, udforske biodiversiteten og opdage de små detaljer, der gør vores natur helt unik.
-            <br><br>
-            Uanset om du er studerende, naturentusiast, skoleklasse eller familie, er der plads til dig. Kom med ud, bliv klogere på naturen, og oplev hvor meget liv der gemmer sig lige omkring os!
+          <p>
+            Hvor mange planter og dyr kan du egentlig genkende? <br /><br />
+            Tag med på en spændende opdagelsesrejse i naturen, hvor du lærer at
+            identificere arter, udforske biodiversiteten og opdage de små
+            detaljer, der gør vores natur helt unik.
+            <br /><br />
+            Uanset om du er studerende, naturentusiast, skoleklasse eller
+            familie, er der plads til dig. Kom med ud, bliv klogere på naturen,
+            og oplev hvor meget liv der gemmer sig lige omkring os!
           </p>
         </div>
 
         <div class="about">
-        <img src="images/sneeegl.webp" alt="">
+          <img src="images/sneeegl.webp" alt="" />
         </div>
       </section>
 
-
-            <!-- CTA ?? -->
-       <section class="shortcuts">
+      <!-- CTA ?? -->
+      <section class="shortcuts">
         <div class="shortcut-card">
-          <img src="images/agenda.svg" alt="">
+          <img src="images/agenda.svg" alt="" />
           <h3>Se programmet her!</h3>
-          <p>Få et overblik over dagens aktiviteter, spændende workshops og inspirerende oplæg. Se, hvad der venter dig til Mosemissionen, og planlæg din dag i mosen! 🌿</p>
+          <p>
+            Få et overblik over dagens aktiviteter, spændende workshops og
+            inspirerende oplæg. Se, hvad der venter dig til Mosemissionen, og
+            planlæg din dag i mosen! 🌿
+          </p>
           <a href="#program">Se program her →</a>
         </div>
 
         <div class="shortcut-card">
-          <img src="images/notebook.svg" alt="">
+          <img src="images/notebook.svg" alt="" />
           <h3>Tilmeld dig her!</h3>
-          <p>Tilmeld dig Mosemissionen, og vær med til en dag fyldt med naturoplevelser, spændende aktiviteter og nye opdagelser. Vi glæder os til at se dig! 🌿</p>
+          <p>
+            Tilmeld dig Mosemissionen, og vær med til en dag fyldt med
+            naturoplevelser, spændende aktiviteter og nye opdagelser. Vi glæder
+            os til at se dig! 🌿
+          </p>
           <a href="form.html">Tilmeld her →</a>
         </div>
-</section>
+      </section>
 
-<!-- ARTERNE I MOSEN-->
-        
+      <!-- ARTERNE I MOSEN-->
 
       <section class="species">
         <div class="species-content">
           <div>
-            <img src="images/blomst.webp" alt="">
+            <img src="images/blomst.webp" alt="" />
           </div>
 
           <div>
-            <img src="images/larve.webp" alt="">
-          </div>
-          
-          <div>
-          <img src="images/fugl.webp" alt="">
+            <img src="images/larve.webp" alt="" />
           </div>
 
           <div>
-          <h2>Naturlivet i mosen</h2>
-          <p>Utterslev Mose er hjem for et rigt og varieret plante- og dyreliv, hvor hver art spiller en vigtig rolle i naturens balance.<br><br>
-            Fra vilde blomster og summende insekter til fugle langs vandkanten gemmer mosen på et væld af spændende arter. Her finder du både liv over og under vandoverfladen, og med lidt nysgerrighed kan du opdage meget mere, end øjet først fanger.<br><br>
-            Gå på opdagelse i mosens biodiversitet, og lær de mange arter bedre at kende. 
-          </p>
+            <img src="images/fugl.webp" alt="" />
           </div>
 
+          <div>
+            <h2>Naturlivet i mosen</h2>
+            <p>
+              Utterslev Mose er hjem for et rigt og varieret plante- og dyreliv,
+              hvor hver art spiller en vigtig rolle i naturens balance.<br /><br />
+              Fra vilde blomster og summende insekter til fugle langs vandkanten
+              gemmer mosen på et væld af spændende arter. Her finder du både liv
+              over og under vandoverfladen, og med lidt nysgerrighed kan du
+              opdage meget mere, end øjet først fanger.<br /><br />
+              Gå på opdagelse i mosens biodiversitet, og lær de mange arter
+              bedre at kende.
+            </p>
           </div>
-
+        </div>
       </section>
 
       <!-- Mere om event her -->
-       <section>
+      <section>
         <h2>Udstyr dig med nysgerrighed!</h2>
-        <p>En interaktiv oplevelse, hvor man ikke bare går en tur i naturen, men får redskaberne til selv at gå på opdagelse.</p><br>
+        <p>
+          En interaktiv oplevelse, hvor man ikke bare går en tur i naturen, men
+          får redskaberne til selv at gå på opdagelse.
+        </p>
+        <br />
         <h3>Mød os ved startpunktet</h3>
-        <p>Når du ankommer, står vores naturvejledere klar til at tage imod dig. Her får du udleveret en lille udforskningspakke med:
-          <ul>
-            <li>🔍 <b>En lup</b> - kom helt tæt på mosens små beboere.</li>
-            <li>🗺️ <b>Et kort</b> - find vej gennem området og opdag nye steder.</li>
-            <li>📖 <b>Et artskompendie</b> - lær at kende forskel på insekterne vha. enkelte bestemmelsesnøgler</li>
-          </ul><br>
-          Derefter er du klar til at udforske mosen i dit eget tempo. Og har du brug for hjælp undervejs, står vores naturvejledere klar med gode råd og spændende viden.
-        </p><br>
+        <p>
+          Når du ankommer, står vores naturvejledere klar til at tage imod dig.
+          Her får du udleveret en lille udforskningspakke med:
+        </p>
+        <ul>
+          <li>🔍 <b>En lup</b> - kom helt tæt på mosens små beboere.</li>
+          <li>
+            🗺️ <b>Et kort</b> - find vej gennem området og opdag nye steder.
+          </li>
+          <li>
+            📖 <b>Et artskompendie</b> - lær at kende forskel på insekterne vha.
+            enkelte bestemmelsesnøgler
+          </li>
+        </ul>
+        <br />
+        <p>
+          Derefter er du klar til at udforske mosen i dit eget tempo. Og har du
+          brug for hjælp undervejs, står vores naturvejledere klar med gode råd
+          og spændende viden.
+        </p>
+        <br />
 
         <h3>Noget for alle nysgerrige!</h3>
-        <p>Uanset om du kommer med familien, er studerende eller bare elsker at gå på opdagelse i naturen, er der noget at opleve. NATURAMA inviterer alle nysgerrige sjæle til en dag fyldt med spændende opdagelser, sjove aktiviteter og nye perspektiver på naturen omkring os.</p><br>
+        <p>
+          Uanset om du kommer med familien, er studerende eller bare elsker at
+          gå på opdagelse i naturen, er der noget at opleve. NATURAMA inviterer
+          alle nysgerrige sjæle til en dag fyldt med spændende opdagelser, sjove
+          aktiviteter og nye perspektiver på naturen omkring os.
+        </p>
+        <br />
         <h4>For familien</h4>
-        <p>Gør naturen til en fælles opdagelsesrejse. Børnene kan gå på insektjagt, løse små opgaver og undersøge, hvad der gemmer sig i græsset.</p><br>
+        <p>
+          Gør naturen til en fælles opdagelsesrejse. Børnene kan gå på
+          insektjagt, løse små opgaver og undersøge, hvad der gemmer sig i
+          græsset.
+        </p>
+        <br />
 
         <h4>For de studerene</h4>
-        <p>Få praktisk erfaring med artsbestemmelse, biodiversitet og feltarbejde. En oplagt mulighed for at afprøve teorien i virkeligheden.</p><br>
+        <p>
+          Få praktisk erfaring med artsbestemmelse, biodiversitet og
+          feltarbejde. En oplagt mulighed for at afprøve teorien i
+          virkeligheden.
+        </p>
+        <br />
 
         <h4>For de naturinteresserede</h4>
-        <p>Fordyb dig i mosens biodiversitet, lær nye arter at kende, og bliv klogere på det liv, der ofte gemmer sig lige foran os.</p>
-       </section>
+        <p>
+          Fordyb dig i mosens biodiversitet, lær nye arter at kende, og bliv
+          klogere på det liv, der ofte gemmer sig lige foran os.
+        </p>
+      </section>
 
-      
-       <!-- PRACTISK INFO-->
+      <!-- PRACTISK INFO-->
       <section class="practical" id="program">
         <div>
           <h2>Program</h2>
@@ -190,7 +239,10 @@
             <div class="practical-info">
               <span class="category">ANKOMST</span>
               <h3>Velkommen til Mosemissionen</h3>
-              <p>Check-in, udlevering af materialer og en kort introduktion til dagens event.</p>
+              <p>
+                Check-in, udlevering af materialer og en kort introduktion til
+                dagens event.
+              </p>
             </div>
           </div>
 
@@ -202,7 +254,10 @@
             <div class="practical-info">
               <span class="category">AKTIVITET</span>
               <h3>Åbne aktivitetsstationer og artsbestemmelse</h3>
-              <p>Deltagere kan tage på udforskning i mosen og udføre dagens aktiviteter.</p>
+              <p>
+                Deltagere kan tage på udforskning i mosen og udføre dagens
+                aktiviteter.
+              </p>
             </div>
           </div>
 
@@ -214,11 +269,14 @@
             <div class="practical-info">
               <span class="category">FOREDRAG</span>
               <h3>Bevaring af Københavns natur</h3>
-              <p>Foredrag af Henrik Klemmensen om vigtigheden af at bevare byens naturområder.</p>
+              <p>
+                Foredrag af Henrik Klemmensen om vigtigheden af at bevare byens
+                naturområder.
+              </p>
             </div>
           </div>
 
-                    <div class="practical-item">
+          <div class="practical-item">
             <div class="time">
               16:30
               <span>17:00</span>
@@ -226,89 +284,88 @@
             <div class="practical-info">
               <span class="category">AFSLUTNING</span>
               <h3>Udtjekning</h3>
-              <p>Udtjek kan ske hele dagen, men sidste udkald for at tjekke ud og tilbagelevere udstyr.</p>
+              <p>
+                Udtjek kan ske hele dagen, men sidste udkald for at tjekke ud og
+                tilbagelevere udstyr.
+              </p>
             </div>
           </div>
 
           <button class="btn" popovertarget="program-details">
-  Læs velkomstbrev →
-</button>
+            Læs velkomstbrev →
+          </button>
         </div>
-
-        
 
         <!-- LILLE KORT -->
         <div>
           <h2>Kort</h2>
           <button class="map-trigger" popovertarget="big-map">
-            <img src="images/MAP_V3.svg" alt="Kort over området">
+            <img src="images/MAP_V3.svg" alt="Kort over området" />
           </button>
         </div>
 
+        <!-- STORT KORT / POPOVER -->
+        <div id="big-map" popover>
+          <button
+            class="close-map"
+            popovertarget="big-map"
+            popovertargetaction="hide"
+          >
+            ✕
+          </button>
+          <img src="images/MAP_V3.svg" alt="Stort kort over området" />
+        </div>
+      </section>
 
-      <!-- STORT KORT / POPOVER -->
-       <div id="big-map" popover>
-        <button class="close-map"
-          popovertarget="big-map"
-          popovertargetaction="hide">
-          ✕
-        </button>
-        <img src="images/MAP_V3.svg" alt="Stort kort over området">
+      <div class="program-details" id="program-details" popover>
+        <div class="program-content">
+          <h2>Kære Mosekæmper,</h2>
+
+          <p>
+            Vi har håbet og bedt om godt vejr, så mosen atter igen kan blive
+            fyldt med liv. Noget er slået fejl, da planter og dyr ikke længere
+            er, hvor de plejer at være. Du er vores eneste håb for en lys og
+            grøn fremtid! Saml så mange artefakter som muligt, inden tiden løber
+            ud.
+
+            <br /><br />
+
+            NATURAMA og Mosefolket sætter sin lid til dig! Held og lykke, og må
+            Moseoddsene altid være med dig!
+          </p>
+
+          <button class="btn" popovertarget="program-details">Luk</button>
+        </div>
       </div>
-    </section>
 
-    <div class="program-details" id="program-details" popover>
-  <div class="program-content">
-    <h2>Kære Mosekæmper,</h2>
-
-    <p>
-      Vi har håbet og bedt om godt vejr, så mosen atter igen kan
-      blive fyldt med liv. Noget er slået fejl, da planter og dyr
-      ikke længere er, hvor de plejer at være. Du er vores eneste
-      håb for en lys og grøn fremtid!
-
-      Saml så mange artefakter som muligt, inden tiden løber ud.
-
-      <br><br>
-
-      NATURAMA og Mosefolket sætter sin lid til dig!
-      Held og lykke, og må Moseoddsene altid være med dig!
-    </p>
-
-    <button class="btn" popovertarget="program-details">
-      Luk
-    </button>
-  </div>
-</div>
-
-
-    <!-- Karussel -->
-     <section class="karrusel" id="karrusel">
-      <div class="sponsorer" id="sponsorer">
-        <img src="images/bispebjerg-spejderne.webp" alt="sponsor 1">
-        <img src="images/dn.webp" alt="sponsor 2">
-        <img src="images/utterslev-moses-venner.webp" alt="sponsor 3">
-        <img src="images/naturstyrelsen.webp" alt="sponsor 4">
-        <img src="images/WWF_logo.svg.webp" alt="sponsor 5">
-        <img src="images/cafe-staalvand.webp" alt="sponsor 6">
-        <img src="images/triers-kaffevogn.webp" alt="sponsor 7">
-      </div>
-    </section>
-
+      <!-- Karussel -->
+      <section class="karrusel" id="karrusel">
+        <div class="sponsorer" id="sponsorer">
+          <img src="images/bispebjerg-spejderne.webp" alt="sponsor 1" />
+          <img src="images/dn.webp" alt="sponsor 2" />
+          <img src="images/utterslev-moses-venner.webp" alt="sponsor 3" />
+          <img src="images/naturstyrelsen.webp" alt="sponsor 4" />
+          <img src="images/WWF_logo.svg.webp" alt="sponsor 5" />
+          <img src="images/cafe-staalvand.webp" alt="sponsor 6" />
+          <img src="images/triers-kaffevogn.webp" alt="sponsor 7" />
+        </div>
+      </section>
     </main>
 
-<footer class="site-footer">
-    <div class="footer-content">
-      <p class="footer-brand">NATURAMA</p>
-      <p class="footer-logo"><img src="images/IKON1.svg" alt="Naturama logo" /></p>
-      <div>
-        <p><strong>Kontakt</strong></p>
-        <p>E-mail: naturama@gmail.com</p>
-        <p>Telefon: +45 12 34 56 78</p>
-        <p>Adresse: Mosesvinget, 2400 København NV</p>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p class="footer-brand">NATURAMA</p>
+        <p class="footer-logo">
+          <img src="images/IKON1.svg" alt="Naturama logo" />
+        </p>
+        <div>
+          <p><strong>Kontakt</strong></p>
+          <p>E-mail: naturama@gmail.com</p>
+          <p>Telefon: +45 12 34 56 78</p>
+          <p>Adresse: Mosesvinget, 2400 København NV</p>
+        </div>
       </div>
-    </div>
-  </footer>
-<script src="script.js"></script>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>

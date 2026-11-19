@@ -25,6 +25,7 @@
 }
 
 .svg-placeholder {
+  position: relative;
   background-color: #99d1aa;
   border-radius: 10px;
   border: none;
@@ -38,8 +39,8 @@
 }
 
 .map-overlay {
-  position: fixed;
-  width: 60px;
+  position: absolute;
+  width: 12%;
   top: 43%;
   left: 37%;
   z-index: 2;

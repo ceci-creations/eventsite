@@ -5,34 +5,133 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formular | Eventnavn</title>
-  <link rel="stylesheet" href="./starter.css">
-  <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/starter.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/svg.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="header-content">
-      <a class="site-logo" href="./">Eventnavn</a>
-      <nav class="site-nav">
-        <button>Menu</button>
-        <ul class="menu" id="menu" popover>
-          <li><a href="./">Forside</a></li>
-          <li><a href="./svg.html">Interaktiv SVG</a></li>
-          <li><a href="./form.html" aria-current="page">Formular</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header class="site-header">
+      <div class="header-content">
+        <a class="site-logo" href="./"
+          ><img src="images/IKON1.svg" alt="Naturama logo" /> NATURAMA</a
+        >
+
+        <!-- GLOBAL NAVIGATION -->
+        <nav class="site-nav">
+          <button>Menu</button>
+          <ul class="menu" id="menu" popover>
+            <li><a href="index.html" aria-current="page">Forside</a></li>
+            <li><a href="svg.html">Aktivitetskort</a></li>
+            <li>
+              <a href="form.html">Tilmeld her!</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
   <main>
+<main>
     <section class="form-page">
       <header class="form-intro">
-        <h1>Formular</h1>
-        <p>Lav en formular, der sender brugeren videre til opsamlingssiden.</p>
+        <h1>Formular til Mosemission</h1>
+        <p>Tilmeld dig og vær med på en spændende rejse rundt i Mosesamfundet, hvor du bliver klogere på hvilken
+          udfording, der kommer krybende i det skjulte. <br> <br> Vælg et af fire Mosesamfund og vær med til at hjælpe
+          der
+          hvor
+          der
+          er brug for hjælp.</p>
       </header>
 
-      <form class="form-placeholder" action="./opsamling.html"></form>
+      <form class="form-placeholder" action="./opsamling.html">
+        <div>
+          <fieldset>
+            <legend class="småOverskrift"><strong>Kontaktoplysninger</strong></legend>
+            <label for="fulde-navn" class="miniOverskrift">Fulde navn </label>
+            <input type="text" id="fulde-navn" name="fulde-navn" style="text-transform: capitalize;"
+              placeholder="Anders Jensen" required>
+
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" autocapitalize="none" spellcheck="false"
+              style="text-transform: lowercase;" placeholder="anders.jensen@gmail.com" required>
+
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" name="phone" maxlength="8" pattern="[0-9]{8}" placeholder="12 34 56 78">
+          </fieldset>
+
+          <fieldset>
+            <legend class="småOverskrift"><strong>Antal deltagere</strong></legend>
+            <label for="antal-voksne">Voksne </label>
+            <select id="antal-voksne" name="antal-voksne" required>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+
+            <label for="antal-børn">Børn under 18 år</label>
+            <select id="antal-børn" name="antal-børn" required>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend class="småOverskrift"><strong>Hvilken Mosemission vil du opleve? </strong></legend>
+            <label for="mosemission-1">
+              <input type="radio" id="mosemission-1" name="mosemission" value="Utterslev mose">
+              Utterslev mose
+            </label>
+            <label for="mosemission-2">
+              <input type="radio" id="mosemission-2" name="mosemission" value="Sengeløse">
+              Sengeløse mose
+            </label>
+            <label for="mosemission-3">
+              <input type="radio" id="mosemission-3" name="mosemission" value="Porsemose">
+              Porsemose
+            </label>
+            <label for="mosemission-4">
+              <input type="radio" id="mosemission-4" name="mosemission" value="Tysmosen">
+              Tysmosen
+            </label>
+          </fieldset>
+        </div>
+
+        <div>
+          <fieldset>
+            <legend class="småOverskrift"><strong>Hvilken dato passer bedst?</strong></legend>
+            <label for="dato-1">
+              <input type="radio" id="dato-1" name="dato" value="15. januar">
+              
+15.januar</label><label for="reason-2"><input type="radio" id="dato-2" name="dato" value="24. marts">
+24.marts</label><label for="reason-3"><input type="radio" id="dato-3" name="dato" value="2. april">
+2.april</label></fieldset>
+
+<label class="textOverskrift" for="message" class="småOverskrift"><strong>Noget særligt vi skal tage hensyn
+              til?</strong></label>
+          <textarea id="message" name="message" rows="4"></textarea>
+
+          <label class="accept-terms">
+            <p>Oplysningerne bruges udelukkende til bekræftelse af deltagelse.</p>
+            <input class="accept-terms" type="checkbox" name="accept-terms" required>
+            Jeg accepterer *
+          </label>
+          <p class="status" data-status aria-live="polite"></p>
+          <button type="submit">Tilmeld</button>
+        </div>
+      </form>
     </section>
+
+    <label>
+      <span class="visually-hidden">Theme</span>
+      <input id="theme-toggle" type="checkbox">
+    </label>
   </main>
 
   <footer class="site-footer">
