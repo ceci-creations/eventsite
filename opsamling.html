@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Opsamling | Eventnavn</title>
-  <link rel="stylesheet" href="./starter.css">
-  <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="css/starter.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/opsamling.css" />
+    <link rel="stylesheet" href="css/fonts.css">
 </head>
 
 <body>
@@ -24,27 +26,84 @@
     </div>
   </header>
 
-  <main>
+<main>
     <section class="opsamling-page">
       <div class="opsamling-intro">
-        <h1>Opsamling</h1>
-        <p>Vis brugerens valg som et pass, en invitation eller noget andet, der passer til dit event.</p>
+        <h1>Bekræftelse</h1>
+        <p>Tak for din tilmelding! </p>
+        <p>Vi ser frem til en hyggelig og lærerig dag.</p>
         <div class="actions">
-          <a class="button" href="./form.html">Tilbage til formular</a>
+          <p>Er ét moseeventyr ikke nok? Så klik på knappen herunder og udfyld blanketten igen.</p>
+          <a class="button" href="./form.html">Tilbage til tilmelding</a>
         </div>
       </div>
 
-      <article class="opsamling-placeholder"></article>
+      <article class="opsamling-placeholder">
+        <article class="event-pass">
+          <div>
+            <section class="data">
+              <!-- <h2>Dit personlige event-pas</h2> -->
+              <div class="personal-info-section">
+                <h3>Dine kontaktoplysninger</h3>
+                <p>Navn: <span id="op-fulde-navn" style="text-transform: capitalize;"></span></p>
+                <p>E-mail: <span id="op-email" style="text-transform: lowercase;"></span></p>
+                <p>Telefon: <span id="op-phone"></span></p>
+              </div>
+            </section>
+            <section class="op-antal-voksne">
+              <h3>Antal tilmeldte</h3>
+              <p>Voksne:</p>
+              <ul id="op-antal-voksne"></ul>
+            </section>
+            <section class="op-antal-børn">
+              <p>Børn:</p>
+              <ul id="op-antal-børn"></ul>
+            </section>
+          </div>
+          <div class="mission-og-dato">
+            <section class="op-mosemission">
+              <h3>Valgt Mosemission</h3>
+              <ul id="op-mosemission"></ul>
+            </section>
+            <section class="op-dato">
+              <h3>Dato for missionen</h3>
+              <ul id="op-dato"></ul>
+            </section>
+          </div>
+        </article>
     </section>
-  </main>
+<div class="program-details" id="program-details" popover>
+      <img src="/images/blomst.webp" alt="Deltagere omkring et bord med noter og laptops">
+      <div class="program-content flow">
+        <h2>Kære Mosekæmper</h2>
+        <p>
+          Vi har håbet og bedt om godt vejr, så mosen atter igen kan
+          blive fyldt med liv. Noget er slået fejl, da planter og dyr ikke længere er hvor de plejer at være. Du er
+          vores eneste håb for en lys og grøn fremtid! Saml så
+          mange artifakter som muligt inden tiden løber ud. <br><br> NATURAMA og Mosefolket sætter sin lid til dig! Held
+          og lykke og må moseoddsene altid være med dig! </p>
+        <button class="btn" popovertarget="program-details">
+          Luk
+        </button>
+      </div>
+      </article>
+      </section>
+    </main>
 
-  <footer class="site-footer">
+    <footer class="site-footer">
     <div class="footer-content">
-      <p>Eventnavn</p>
-      <p>Footer</p>
+      <p class="footer-brand">NATURAMA</p>
+      <p class="footer-logo"><img src="images/IKON1.svg" alt="Naturama logo" /></p>
+      <div>
+        <p><strong>Kontakt</strong></p>
+        <p>E-mail: naturama@gmail.com</p>
+        <p>Telefon: +45 12 34 56 78</p>
+        <p>Adresse: Mosesvinget, 2400 København NV</p>
+      </div>
     </div>
   </footer>
-  <script src="./script.js"></script>
-</body>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
 
+  </body>
 </html>

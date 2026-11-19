@@ -9,6 +9,8 @@ html {
   --space-1: 1rem;
   --space-2: 2rem;
   --space-3: 3rem;
+  --box-border-radius: 10px;
+  --button-border-radius: 5px;
 
   background: var(--color-page);
   color: var(--color-text);
@@ -222,6 +224,7 @@ main > * {
 .opsamling-placeholder {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
+  border-radius: 10px;
 }
 
 .panel {
@@ -240,22 +243,6 @@ main > * {
   min-height: -webkit-fill-available;
   min-height: stretch;
   padding: var(--space-1);
-}
-
-/* Details */
-.accordion {
-  display: grid;
-  gap: var(--space-05);
-}
-
-.accordion-item {
-  border: 1px solid var(--color-border);
-  background: var(--color-surface);
-}
-
-.accordion-item p {
-  padding: 0 var(--space-1) var(--space-1);
-  color: var(--color-muted);
 }
 
 /* Knap/link */

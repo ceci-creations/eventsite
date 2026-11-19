@@ -1,3 +1,5 @@
+/* OVERALL LAYOUT */
+
 .svg-page {
   display: grid;
   gap: var(--space-2);
@@ -23,7 +25,40 @@
 }
 
 .svg-placeholder {
-  background-color: #a09a8a;
+  background-color: #99d1aa;
   border-radius: 10px;
   border: none;
+}
+
+/* KORTET */
+
+.map {
+  width: 100%;
+  display: block;
+}
+
+.map-overlay {
+  position: fixed;
+  width: 60px;
+  top: 43%;
+  left: 37%;
+  z-index: 2;
+}
+
+/* ACCORDION */
+
+/* Details */
+.accordion {
+  display: grid;
+  gap: var(--space-05);
+}
+
+.accordion-item {
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.accordion-item p {
+  padding: 0 var(--space-1) var(--space-1);
+  color: var(--color-muted);
 }

@@ -333,6 +333,64 @@ ul {
   cursor: pointer;
 }
 
+/** VELKOMSTBREV POPOVER **/
+
+.program-details {
+  width: min(90vw, 600px);
+  max-height: 85vh;
+  padding: 40px;
+  border: none;
+  border-radius: 15px;
+  margin: auto;
+  overflow: auto;
+  background-color: #f8f1de;
+  color: #333;
+
+  /* Animation */
+  opacity: 0;
+  transform: scale(0.8);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    overlay 0.3s allow-discrete,
+    display 0.3s allow-discrete;
+}
+
+.program-details:popover-open {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@starting-style {
+  .program-details:popover-open {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+.program-details::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.program-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.program-content h2 {
+  margin: 0;
+}
+
+.program-content p {
+  line-height: 1.6;
+}
+
+.program-content .btn {
+  align-self: flex-start;
+  cursor: pointer;
+}
+
 /* KARUSSEL */
 .karrusel {
   --antal: 5;

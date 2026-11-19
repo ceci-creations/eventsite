@@ -1,0 +1,85 @@
+.actions {
+  p {
+    margin-top: 10px;
+    padding-bottom: 5px;
+  }
+  a {
+    margin-top: 7px;
+    border: 1px solid gray;
+    border-radius: var(--button-border-radius);
+  }
+}
+
+.opsamling-placeholder {
+  border-radius: var(--box-border-radius);
+}
+
+.opsamling-intro {
+  margin-bottom: 20px;
+}
+
+.event-pass {
+  padding: 10px 20px;
+  border-radius: var(--box-border-radius);
+
+  .personal-info-section {
+    padding-bottom: 10px;
+    p {
+      padding-bottom: 7px;
+    }
+  }
+
+  h2 {
+    color: #fbfbfa;
+  }
+
+  h3 {
+    padding-bottom: 3px;
+  }
+
+  .op-antal-voksne {
+    padding-bottom: 10px;
+  }
+
+  .op-antal-børn {
+    padding-bottom: 8px;
+  }
+
+  #op-antal-børn {
+    padding-bottom: 7px;
+  }
+
+  .op-mosemission {
+    padding-bottom: 8px;
+  }
+
+  .op-dato {
+    padding-top: 10px;
+  }
+}
+
+.card {
+  h3 {
+    padding-bottom: 5px;
+  }
+  .btn {
+    margin-top: 10px;
+    padding: 2px 5px;
+    border-radius: var(--button-border-radius);
+  }
+}
+
+/* opsamlingsside */
+@media (width > 700px) {
+  .opsamling-placeholder {
+    max-width: 800px;
+
+    .event-pass {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .mission-og-dato {
+        margin-left: 20px;
+      }
+    }
+  }
+}
