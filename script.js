@@ -51,6 +51,8 @@ if (eventPass) {
   valgtDato.textContent = dato;
 
   // Konfetti-effekt på opsamlingssiden
+  const smaltFormat = window.innerWidth < 600
+  
   confetti({
     particleCount: 210,
     spread: 80,
@@ -136,3 +138,24 @@ function naeste() {
 setInterval(naeste, 5000);
 // ^^ gør at funktionen 'naeste' kaldes hvert 5. sekund
 // dvs. skiftet mellem sponsorer sker med 5 sekunders mellemrum
+
+
+const accordionItems = document.querySelectorAll(".accordion-item");
+
+accordionItems.forEach((item) => {
+  item.addEventListener("toggle", () => {
+    if (!item.open) return;
+
+    const target = item.dataset.target;
+    const illustration = document.querySelector(`.${target}`);
+
+    if (!illustration) return;
+
+    illustration.classList.remove("jump");
+
+    // Genstart animationen
+    void illustration.offsetWidth;
+
+    illustration.classList.add("jump");
+  });
+});

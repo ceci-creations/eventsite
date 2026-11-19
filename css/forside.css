@@ -44,7 +44,7 @@
   top: 120%;
   border-radius: 10px;
   padding: 10px;
-  background-color: green;
+  background-color: #397b59;
   color: #f5f5f5;
   text-decoration: none;
 }
@@ -125,6 +125,9 @@
 }
 
 .shortcut-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   border-radius: 10px;
   background-color: #99d1aa;
   padding: 20px;
@@ -326,11 +329,25 @@ ul {
 }
 
 /* Luk-knap */
-.close-map {
+#big-map .close-map {
   display: block;
   margin-left: auto;
   margin-bottom: 10px;
   cursor: pointer;
+
+  background-color: #397b59;
+  color: #f5f5f5;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-family: "JosefinSans";
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+#big-map .close-map:hover {
+  background-color: #285c40;
 }
 
 /** VELKOMSTBREV POPOVER **/
@@ -389,6 +406,7 @@ ul {
 .program-content .btn {
   align-self: flex-start;
   cursor: pointer;
+  border: none;
 }
 
 /* KARUSSEL */
@@ -422,5 +440,98 @@ ul {
         width: calc(100% / var(--antal));
       }
     }
+  }
+}
+
+@media (max-width: 600px) {
+
+  .species-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .species-content img {
+    width: 100%;
+    height: 180px;
+    max-width: none;
+  }
+
+  .species-text {
+    grid-column: 1 / -1;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .introduction-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about img {
+    height: 250px;
+  }
+
+  .shortcuts {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+.program-content .btn {
+  align-self: flex-start;
+  cursor: pointer;
+
+  background-color: #397b59;
+  color: #f5f5f5;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-family: "JosefinSans";
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.program-content .btn:hover {
+  background-color: #397b59;
+}
+
+button.btn {
+  background-color: #397b59;
+  color: #f5f5f5;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* QUICK FACTS - MOBIL */
+@media (max-width: 600px) {
+  .facts-grid {
+    padding: 25px 0;
+  }
+
+  .facts-content {
+    width: calc(100% - 40px);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 10px;
+  }
+
+  .fact {
+    gap: 8px;
+  }
+
+  .fact-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .fact h3 {
+    font-size: 1.2rem;
+  }
+
+  .fact p {
+    font-size: 0.8rem;
   }
 }

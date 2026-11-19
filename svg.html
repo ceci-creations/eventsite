@@ -47,16 +47,10 @@
 
         <section class="svg-layout">
           <div class="svg-placeholder">
-            <img
-              class="map"
-              src="images/MAP_V3.svg"
-              alt="Aktivitetskort over Utterslev Mose"
-            />
-            <img
-              class="map-overlay"
-              src="images/frog_illu.png"
-              alt="Dyr fra mosen"
-            />
+            <img class="map" src="images/MAP_V3.svg" alt="Aktivitetskort over Utterslev Mose"/>
+            <img class="map-overlay frog" src="images/frog_illu.png" alt="Dyr fra mosen"/>
+            <img class="map-overlay sheep" src="images/sheep.svg" alt="Dyr fra mosen"/>
+            <img class="map-overlay plant" src="images/mjødurt.svg" alt="Dyr fra mosen"/>
           </div>
 
           <article class="panel">
@@ -64,7 +58,7 @@
             <div class="accordion">
               <!-- TODO: Lav om til details/summary -->
 
-              <details open class="accordion-item">
+              <details open class="accordion-item" name="mission" data-target="frog">
                 <summary><strong>Mød mosens padder.</strong></summary>
                 <p>
                   Vores naturvejleder har fundet en masse padder og smådyr fra
@@ -72,7 +66,7 @@
                 </p>
               </details>
 
-              <details class="accordion-item">
+              <details class="accordion-item" name="mission" data-target="plant">
                 <summary><strong>Nøgling af planter.</strong></summary>
                 <p>
                   Med et kompendium i hånden, skal du finde nogle planter i
@@ -80,7 +74,7 @@
                 </p>
               </details>
 
-              <details class="accordion-item">
+              <details class="accordion-item" name="mission" data-target="sheep">
                 <summary><strong>Klap et får.</strong></summary>
                 <div class="content">
                   <p>

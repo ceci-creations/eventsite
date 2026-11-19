@@ -19,31 +19,66 @@
   display: grid;
   gap: var(--space-2);
   align-items: start;
+
   @media (width > 800px) {
     grid-template-columns: 1fr min(40%, 36ch);
   }
 }
 
-.svg-placeholder {
-  position: relative;
-  background-color: #99d1aa;
-  border-radius: 10px;
-  border: none;
+.panel {
+  height: fit-content;
+  align-self: start;
+  box-sizing: border-box;
 }
 
-/* KORTET */
+
+/* KORT CONTAINER */
+
+.svg-placeholder {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* SELVE KORTET */
 
 .map {
   width: 100%;
+  height: auto;
   display: block;
 }
 
+/* BILLEDER OVEN PÅ KORTET */
+
 .map-overlay {
   position: absolute;
-  width: 12%;
+  height: auto;
+  z-index: 2;
+}
+
+/* FRØ */
+
+.frog {
+  width: 10%;
   top: 43%;
   left: 37%;
-  z-index: 2;
+}
+
+/* FÅR */
+
+.sheep {
+  width: 10%;
+  top: 65%;
+  left: 60%;
+}
+
+/* PLANTE */
+
+.plant {
+  width: 20%;
+  top: 23%;
+  left: 80%;
 }
 
 /* ACCORDION */
@@ -55,11 +90,45 @@
 }
 
 .accordion-item {
-  border: 1px solid var(--color-border);
   background: var(--color-surface);
 }
 
 .accordion-item p {
   padding: 0 var(--space-1) var(--space-1);
-  color: var(--color-muted);
+  color: var(#397b59);
+}
+
+/* HOPPE ANIMATION */
+
+.map-overlay.jump {
+  animation: hop 0.6s ease;
+  transform-origin: bottom center;
+}
+
+@keyframes hop {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  30% {
+    transform: translateY(-35px) rotate(-8deg);
+  }
+
+  50% {
+    transform: translateY(-40px) rotate(8deg);
+  }
+
+  70% {
+    transform: translateY(-20px) rotate(-4deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .map-overlay.jump {
+    animation: none;
+  }
 }

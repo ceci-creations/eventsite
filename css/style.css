@@ -259,8 +259,7 @@ main > * {
 }
 
 /* Flader */
-.panel,
-.form-placeholder,
+.panel,,
 .opsamling-placeholder {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -273,6 +272,14 @@ main > * {
   gap: var(--space-1);
 }
 
+.form-placeholder
+{
+  background-color: #7fb8d3 !important;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+}
+
+
 .svg-placeholder,
 .opsamling-placeholder {
   min-height: -webkit-fill-available;
@@ -280,6 +287,7 @@ main > * {
 }
 
 .form-placeholder {
+  background-color: #7fb8d3;
   min-height: -webkit-fill-available;
   min-height: stretch;
   padding: var(--space-1);
@@ -404,3 +412,5 @@ html.dark {
     padding: 0 5px;
   }
 }
+
+
